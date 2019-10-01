@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' />
+    <title>SIGTE - Barcelona Data Viz Challenge</title>
+    <script src='http://cdn.leafletjs.com/leaflet/v1.3.1/leaflet.js'></script>
+
+    <link href='http://cdn.leafletjs.com/leaflet/v1.3.1/leaflet.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
+
+    <!--jquery-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+
+    <!--mapa coropletes temp bcn-->
+    <script type="text/javascript" src="js/barris_bcn_temp.js"></script>
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/proj4"></script>
+    <script src="js/georaster-layer-for-leaflet.browserify.min.js"></script>
+    <!--easy button plugin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+    <!--bootstrap-->
+    <link data-require="bootstrap-css" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script data-require="bootstrap" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- align topcenter-->
+    <link rel="stylesheet" href="css/leaflet-control-topcenter.css" />
+    <script src="js/leaflet-control-topcenter.js"></script>
+
+
+    <script src="js/map.js"></script>
+
+
+    <!--modal info-->
+    <div id="mymodal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Projecte SIGTE - Data Viz Challenge</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Confirm</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</body>
+</html>

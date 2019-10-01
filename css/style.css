@@ -1,0 +1,98 @@
+.text-visor{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+}
+
+/*legend*/
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white; background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  text-align: left;
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/*slider*/
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/*control-layer*/
+.leaflet-control-layers-overlays{
+  /*width:100px;*/
+}
+
+/*title*/
+.title{
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+
+/*graph*/
+.graph1{
+  margin-bottom: 60px !important;
+  width:600px;
+  height: 400px;
+  background-color:white;
+  padding-top: 20px;
+  opacity: 0.98;
+}
+
+.text-graph{
+  padding-left: 15px;
+}
